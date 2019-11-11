@@ -24,4 +24,11 @@ public class MyBatisTest {
      System.out.println("用戶數據"+users);
     }
 
+    @Test
+    public void test01(){
+        User u=new User();
+        u.setId(1);
+       List<User> u1= usermapper.queryId(u);
+       System.out.println(u1);
+    }
 }
